@@ -44,12 +44,12 @@
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/airiermonster/tekniko-app.git
+   git clone https://github.com/airiermonster/Tekniko-APP.git
    ```
    
 2. Navigate to the project directory:
    ```bash
-   cd tekniko-app
+   cd Tekniko-APP
    ```
    
 3. Install dependencies:
@@ -140,8 +140,6 @@ The app requires a specific JSON structure for the student data. Create a file a
 }
 ```
 
-**Note**: The original JSON file has been removed for security and privacy purposes. You need to create your own JSON file following this structure.
-
 ## Technologies Used
 
 - **Flutter**: UI framework
@@ -157,19 +155,13 @@ The app requires a specific JSON structure for the student data. Create a file a
 Contributions are welcome! If you'd like to contribute:
 
 1. Fork the repository
-2. Create a new branch (`git checkout -b feature/amazing-feature`)
+2. Create a new branch (`git checkout -b feature/feauture-ya-kibabe`)
 3. Make your changes
-4. Commit your changes (`git commit -m 'Add some amazing feature'`)
-5. Push to the branch (`git push origin feature/amazing-feature`)
+4. Commit your changes (`git commit -m 'feauture ya kibabe'`)
+5. Push to the branch (`git push origin feature/feauture ya kibabe`)
 6. Open a Pull Request
 
 For major changes, please open an issue first to discuss what you would like to change.
-
-## Contact
-
-- **Developer**: Maximillian Urio
-- **Email**: airiermonster@gmail.com
-- **GitHub**: [https://github.com/airiermonster](https://github.com/airiermonster)
 
 ## License
 
@@ -178,5 +170,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ---
 
 <p align="center">
-  Made with ❤️ in Flutter
+  Made with ❤️ in Tanzania with Flutter
 </p>
