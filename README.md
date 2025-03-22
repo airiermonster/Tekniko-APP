@@ -13,7 +13,8 @@
   <a href="#installation">Installation</a> •
   <a href="#usage">Usage</a> •
   <a href="#architecture">Architecture</a> •
-  <a href="#screenshots">Screenshots</a> •
+  <a href="#project-structure">Project Structure</a> •
+  <a href="#json-structure">JSON Structure</a> •
   <a href="#technologies-used">Technologies Used</a> •
   <a href="#contributing">Contributing</a> •
   <a href="#license">License</a>
@@ -39,20 +40,24 @@
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/your-username/tekniko.git
+   git clone https://github.com/airiermonster/tekniko-app.git
    ```
    
 2. Navigate to the project directory:
    ```bash
-   cd tekniko
+   cd tekniko-app
    ```
    
 3. Install dependencies:
    ```bash
    flutter pub get
    ```
+
+4. Add the students.json file:
+   - Create a file at `assets/data/students.json`
+   - Follow the JSON structure specified in the [JSON Structure](#json-structure) section
    
-4. Run the app:
+5. Run the app:
    ```bash
    flutter run
    ```
@@ -78,16 +83,60 @@ The project follows a clean architecture approach with:
 
 The app uses the Provider pattern for state management and follows SOLID principles for clean, maintainable code.
 
-## Screenshots
+## Project Structure
 
-<p align="center">
-  <!-- Replace with actual screenshots -->
-  <img src="docs/screenshots/home_screen.png" alt="Home Screen" width="200">
-  &nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="docs/screenshots/details_screen.png" alt="Details Screen" width="200">
-  &nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="docs/screenshots/about_screen.png" alt="About Screen" width="200">
-</p>
+```
+tekniko/
+├── android/                    # Android-specific files
+├── assets/
+│   ├── data/                  # JSON data files
+│   ├── fonts/                 # Custom fonts
+│   └── images/                # App images and icons
+├── ios/                       # iOS-specific files
+├── lib/
+│   ├── core/                  # Core functionality
+│   │   ├── constants/         # App constants
+│   │   ├── theme/            # App theming
+│   │   └── utils/            # Utility functions
+│   ├── data/
+│   │   ├── models/           # Data models
+│   │   └── repositories/     # Data repositories
+│   ├── domain/
+│   │   ├── entities/         # Business entities
+│   │   └── services/         # Business logic
+│   └── presentation/
+│       ├── providers/        # State management
+│       ├── screens/          # App screens
+│       └── widgets/          # Reusable widgets
+├── test/                      # Test files
+└── pubspec.yaml              # Project configuration
+```
+
+## JSON Structure
+
+The app requires a specific JSON structure for the student data. Create a file at `assets/data/students.json` with the following structure:
+
+```json
+{
+  "students": [
+    {
+      "id": "string",
+      "admissionNumber": "string",
+      "firstName": "string",
+      "middleName": "string",
+      "lastName": "string",
+      "phoneNumber": "string",
+      "email": "string",
+      "course": "string",
+      "department": "string",
+      "yearOfStudy": "string",
+      "registrationDate": "YYYY-MM-DD"
+    }
+  ]
+}
+```
+
+**Note**: The original JSON file has been removed for security and privacy purposes. You need to create your own JSON file following this structure.
 
 ## Technologies Used
 
@@ -109,6 +158,14 @@ Contributions are welcome! If you'd like to contribute:
 4. Commit your changes (`git commit -m 'Add some amazing feature'`)
 5. Push to the branch (`git push origin feature/amazing-feature`)
 6. Open a Pull Request
+
+For major changes, please open an issue first to discuss what you would like to change.
+
+## Contact
+
+- **Developer**: Maximillian Urio
+- **Email**: airiermonster@gmail.com
+- **GitHub**: [https://github.com/airiermonster](https://github.com/airiermonster)
 
 ## License
 
